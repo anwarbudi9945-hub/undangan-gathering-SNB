@@ -37,7 +37,8 @@
   @keyframes spin{to{transform:rotate(360deg)}}
 
   /* ============ HERO — foto penuh 16:9 sebagai panggung ============ */
-  .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+  @supports (height:100dvh){.hero{min-height:100dvh}}
   .hero-bg{position:absolute;inset:0}
   .hero-bg img{width:100%;height:100%;object-fit:cover;animation:kb 16s ease-out both}
   @keyframes kb{from{transform:scale(1.15)}to{transform:scale(1.02)}}
@@ -363,6 +364,7 @@
     <span>Faisal</span>
     <span>Yasser</span>
     <span>Figo</span>
+    <span>Febi</span>
     <span>Mahasiswa PKL USN</span>
   </div>
 </section>
